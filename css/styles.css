@@ -1,0 +1,255 @@
+/* Змінні початок */
+:root{
+    --primery-font-fameli: "Roboto", sans-serif;
+    --secondary-font-fameli: "Raleway", sans-serif;
+    --primery-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primery-bg-color:#FFFFFF;
+    --secondary-bg-color: #F5F4FA;
+}
+/* Змінні кінець*/
+
+/* прибирає підкреслення посилань */
+a{text-decoration: none;}
+/* прибирає підкреслення посилань */
+
+/* прибирає маркера */
+ul{ list-style: none;}
+/* прибирає маркера */
+
+/* Обраний  шрифт, колір сторінки початок*/
+body{
+    font-family: var(--primery-font-fameli), sans-serif;
+    background: var(--primery-bg-color);
+    color: var(--primery-text-color);
+}
+/* Обраний  шрифт, колір сторінки кінець*/
+
+/*Головна сторінка початок*/
+
+/* Шапка початок*/
+
+/* Логотип верхій початок*/
+.logo-top{
+    font-family: var(--secondary-font-fameli);
+    font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color:#000000;
+    }
+.logo-accent{ color:var(--accent-color);}
+/* Логотип верхній кінець*/
+
+/* Навигація по сторінкам* початок*/
+.site-nav .link{color: var(--title-text-color);
+        font-family: var(--primery-font-fameli);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+}
+.site-nav .link:hover, 
+.site-nav .link:focus{color: var(--accent-color);}
+/* Навигація по сторінкам кінець*/
+
+/* активна сторінка п.*/
+.site-nav .link.current {color: var(--accent-color);}
+/* активна сторінка к.*/
+
+/* Посилання на контакти п.*/
+.contact-list .link{ color: var(--primery-text-color);
+font-family: var( --primery-font-fameli);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;}
+.contact-list .link:hover,
+.contact-list .link:focus{color: var(--accent-color);}
+/* Посилання на контакти к.*/
+/* Шапка *
+
+/* Герой початок*/
+.hero-title{
+        font-style: normal;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--primery-bg-color);
+}
+.hero-background {
+    background-color: #2F303A;
+}
+.order-button{
+    font-family: var(--primery-font-fameli);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.9;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: var(--primery-bg-color);
+        background-color: var(--accent-color);
+        cursor: pointer;
+}
+.order-button:hover,
+.order-button:focus{color: var(--primery-bg-color);
+background-color: #188CE8}
+/* Герой кінець*/
+
+/* Секции початок*/
+.section-title-primery{
+font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+.section-title-seсondary{
+    font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--title-text-color);
+}
+.section-team-members{
+    background: var(--secondary-bg-color);
+}
+/* Опис компанії п.*/
+.company-description{
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--primery-text-color);
+}
+/* Опис компанії к.*/
+
+/* Опис компанії зображення п.*/
+
+/* Опис компанії зображення к.*/
+
+/* Посади працівників компанії зображення п.*/
+.list-positions{
+    font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--primery-text-color);
+}
+.list-names {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+/* Посади працівників компанії зображення к.*/
+
+/* Секции кінець*/
+
+/* Футер початок*/
+.footer-background{background-color: #2F303A;}
+/* Логотип нижній початок*/
+.logo-bottom {
+    font-family: var(--secondary-font-fameli);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.logo-accent {color: #2196F3;}
+/* Логотип нижній кінець*/
+
+/* Адреса початок*/
+.address{font-family: var(--primery-font-fameli);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;}
+.link-email-address:hover,
+.link-email-address:focus{color: var(--accent-color);}
+.link-email-address{font-family: var(--primery-font-fameli);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);}
+.link-number:hover,
+.link-number:focus{color: var(--accent-color);}
+.link-number{font-family: var(--primery-font-fameli);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);}
+/* Адреса кінець*/
+
+/* Футер нижній кінець*/
+/*Головна сторінка кінець*/
+
+
+
+
+/* Портфоліо початок*/
+
+/* Герой початок*/
+
+/* Список кнопок з фільтром початок */
+.button-filter{
+font-family: var(--primery-font-fameli);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    background: var(--secondary-bg-color);
+}
+.button-filter:hover,
+.button-filter:focus{color: var(--primery-bg-color);
+    background-color: var(--accent-color)
+}
+/* Список кнопок з фільтром початок */
+
+/* Список карточек початок */
+.card-title{
+font-family: var(--primery-font-fameli);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.00;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+}
+.button-icon{
+font-family: var(--primery-font-fameli);
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--primery-text-color);
+}
+/* Список карточек кінець */
+
+/* Герой кінець*/
+
+/* Портфоліо кінець*/
