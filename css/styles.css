@@ -1,3 +1,13 @@
+/* Html */
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+/* Html */
 /* Змінні початок */
 :root{
     --primery-font-fameli: "Roboto", sans-serif;
@@ -14,24 +24,46 @@
 a{text-decoration: none;}
 /* прибирає підкреслення посилань */
 
-/* прибирає маркера */
-ul{ list-style: none;}
-/* прибирає маркера */
+/* прибирає маркера, скидує падинг */
+ul{ list-style: none;
+padding: 0px;}
+/* прибирає маркера, скидує падинг */
 
 /* Обраний  шрифт, колір сторінки початок*/
 body{
+    margin: 0;
     font-family: var(--primery-font-fameli), sans-serif;
     background: var(--primery-bg-color);
     color: var(--primery-text-color);
 }
 /* Обраний  шрифт, колір сторінки кінець*/
 
+/* контейнер */
+.container{
+    width: 1200;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* контейнер */
+
 /*Головна сторінка початок*/
 
 /* Шапка початок*/
-
+.page-header{
+    outline: 2px solid tomato;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
 /* Логотип верхій початок*/
 .logo-top{
+    margin-right: 93px;
     font-family: var(--secondary-font-fameli);
     font-weight: 700;
         font-size: 26px;
@@ -43,6 +75,17 @@ body{
 /* Логотип верхній кінець*/
 
 /* Навигація по сторінкам* початок*/
+.navigation{
+    display: flex;
+    align-items: center;
+}
+.site-nav{
+    display: flex;
+    align-items: center;
+}
+.site-nav-item:not(:last-child){
+    margin-right: 50px;
+}
 .site-nav .link{color: var(--title-text-color);
         font-family: var(--primery-font-fameli);
             font-style: normal;
@@ -60,6 +103,13 @@ body{
 /* активна сторінка к.*/
 
 /* Посилання на контакти п.*/
+.contact-list{
+    display: flex;
+    align-items: center;
+}
+.contact-list-item:not(:last-child){
+    margin-right: 40px;
+}
 .contact-list .link{ color: var(--primery-text-color);
 font-family: var( --primery-font-fameli);
     font-style: normal;
@@ -148,7 +198,7 @@ font-style: normal;
         letter-spacing: 0.03em;
         color: var(--primery-text-color);
 }
-.list-names {
+.list-names{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
