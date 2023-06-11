@@ -153,8 +153,12 @@ font-family: var( --primery-font-fameli);
 /* Герой початок*/
 .hero-title{
     outline: 2px solid tomato;
+   width: 696px;
     margin-top: 0;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+   
 
         font-style: normal;
         font-weight: 900;
@@ -165,6 +169,7 @@ font-family: var( --primery-font-fameli);
         color: var(--primery-bg-color);
 }
 .hero {
+   
     text-align: center;
     background-color: #2F303A;
 }
@@ -198,6 +203,7 @@ font-family: var( --primery-font-fameli);
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 .section-title-primery{
     margin-bottom: 50px;
 
@@ -361,7 +367,16 @@ display: block;
 /* Герой початок*/
 
 /* Список кнопок з фільтром початок */
-.button-filter{
+.list-button{
+    display: flex;
+    justify-content: center;
+   
+
+}
+.list-button-item:not(:last-child){
+    margin-right: 8px;
+}
+.button-filter:{
 font-family: var(--primery-font-fameli);
     font-style: normal;
     font-weight: 500;
@@ -373,12 +388,13 @@ font-family: var(--primery-font-fameli);
     color: var(--title-text-color);
     background: var(--secondary-bg-color);
 }
+
 .button-filter:hover,
 .button-filter:focus{
     color: var(--primery-bg-color);
     background-color: var(--accent-color);
 }
-/* Список кнопок з фільтром початок */
+/* Список кнопок з фільтром кінець */
 
 /* Список карточек початок */
 .flex-container{
@@ -388,13 +404,17 @@ font-family: var(--primery-font-fameli);
 .flex-element{
 width:calc((100% - 60px) / 3);
 margin-right: 30px;
+margin-bottom: 30px;
+
+border: 1px solid #EEEEEE;
 }
 .flex-element:nth-child(3n){
     margin-right: 0;
 }
-/* .flex-element:nth-last-child(-n + 3){
+.flex-element:nth-last-child(-n + 3){
     margin-bottom: 0;
-} */
+}
+
 /* Альтернатива
 .flex-element:not(:nth-child(3n)){
     margin-right: 30px;*/
