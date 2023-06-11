@@ -1,13 +1,3 @@
-/* Html */
-html{
-    box-sizing: border-box;
-}
-*,
-*::before,
-*::after{
-    box-sizing: inherit;
-}
-/* Html */
 /* Змінні початок */
 :root{
     --primery-font-fameli: "Roboto", sans-serif;
@@ -20,23 +10,57 @@ html{
 }
 /* Змінні кінець*/
 
-/* Прибирає врхні маржини в заголовків, абзаців п. */
+/* Скидання від браузера автоматичних налаштувань початок*/
+
+/* Html */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+/* Html */
+
+/* Прибирає врхні маржини в заголовків, абзаців, списків п. */
 h1, h2, h3,h4, h5, h6, p{
     margin-top: 0;
     margin-bottom: 0;
 }
-/* Прибирає врхні маржини в заголовків, абзаців к. */
+ul,ol{
+    margin-top:0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+/* Прибирає врхні маржини в заголовків, абзаців, списків к. */
+
+/* скидання на  зображенях */
+img{
+display: block;
+}
+/* скидання на  зображенях */
 
 /* прибирає підкреслення посилань */
-a
-{text-decoration: none;}
+a{
+    text-decoration: none;
+}
 /* прибирає підкреслення посилань */
 
-/* прибирає маркера, скидує падинг */
-ul{ list-style: none;
-padding: 0px;
-margin: 0;}
-/* прибирає маркера, скидує падинг */
+/* прибирає маркера */
+ul{ 
+    list-style: none;
+}
+/* прибирає маркера */
+
+/* Скидання шрифта на адресі */
+address{
+    font-style: normal;
+}
+/* Скидання шрифта на адресі */
+
+/* Скидання від браузера автоматичних налаштувань кінець*/
 
 /* Обраний  шрифт, колір сторінки початок*/
 body{
@@ -65,6 +89,7 @@ body{
     outline: 2px solid tomato;
     padding-top: 24px;
     padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
 }
 .header-container{
     display: flex;
@@ -119,7 +144,9 @@ body{
 /* Навигація по сторінкам кінець*/
 
 /* активна сторінка п.*/
-.site-nav .link.current {color: var(--accent-color);}
+.site-nav .link.current{
+    color: var(--accent-color);
+}
 /* активна сторінка к.*/
 
 /* Посилання на контакти п.*/
@@ -203,7 +230,12 @@ font-family: var( --primery-font-fameli);
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
+.section-hero{
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #2F303A;
+}
 .section-title-primery{
     margin-bottom: 50px;
 
@@ -406,13 +438,19 @@ width:calc((100% - 60px) / 3);
 margin-right: 30px;
 margin-bottom: 30px;
 
-border: 1px solid #EEEEEE;
+
 }
 .flex-element:nth-child(3n){
     margin-right: 0;
 }
 .flex-element:nth-last-child(-n + 3){
     margin-bottom: 0;
+}
+.element-discription{
+border: 1px solid #EEEEEE;
+border-top: none;
+
+
 }
 
 /* Альтернатива
