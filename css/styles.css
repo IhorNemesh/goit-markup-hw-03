@@ -73,7 +73,7 @@ body{
 
 /* контейнер */
 .container{
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -86,9 +86,6 @@ body{
 
 /* Шапка початок*/
 .page-header{
-    outline: 2px solid tomato;
-    padding-top: 24px;
-    padding-bottom: 25px;
     border-bottom: 1px solid #ECECEC;
 }
 .header-container{
@@ -179,7 +176,6 @@ font-family: var( --primery-font-fameli);
 
 /* Герой початок*/
 .hero-title{
-    outline: 2px solid tomato;
    width: 696px;
     margin-top: 0;
     margin-bottom: 30px;
@@ -226,7 +222,7 @@ font-family: var( --primery-font-fameli);
 
 /* Секции початок*/
 .section{
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -235,6 +231,9 @@ font-family: var( --primery-font-fameli);
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: #2F303A;
+}
+.section-company-description{
+    padding-top: 94px;
 }
 .section-title-primery{
     margin-bottom: 50px;
@@ -265,6 +264,9 @@ font-style: normal;
 .list-company-description{
     display: flex;
 }
+.list-item-company-discription{
+    width: 270px;
+}
 .list-item-company:not(:last-child){
     margin-right: 30px;
 }
@@ -280,15 +282,16 @@ font-style: normal;
 .list-images-works{
     display: flex;
 }
-.img-margin{
-    margin-bottom: 30px;
-}
 
 /* Опис компанії зображення к.*/
 
 /* Посади працівників компанії зображення п.*/
 .list-positions{
     display: flex;
+}
+.positions-inner{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .positions{
     font-size: 16px;
@@ -402,8 +405,7 @@ display: block;
 .list-button{
     display: flex;
     justify-content: center;
-   
-
+    margin-bottom: 50px;
 }
 .list-button-item:not(:last-child){
     margin-right: 8px;
@@ -447,8 +449,9 @@ margin-bottom: 30px;
     margin-bottom: 0;
 }
 .element-discription{
-border: 1px solid #EEEEEE;
-border-top: none;
+    padding: 20px 24px;
+    border: 1px solid #EEEEEE;
+    border-top: none;
 
 
 }
@@ -462,6 +465,8 @@ border-top: none;
 /* Альтернатива */
 
 .card-title{
+    margin-bottom: 4px;
+    
 font-family: var(--primery-font-fameli);
     font-style: normal;
     font-weight: 700;
