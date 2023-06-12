@@ -411,6 +411,8 @@ display: block;
     margin-right: 8px;
 }
 .button-filter{
+    border-radius: 4px;
+    
 font-family: var(--primery-font-fameli);
     font-style: normal;
     font-weight: 500;
