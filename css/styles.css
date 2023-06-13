@@ -267,6 +267,9 @@ font-style: normal;
 .list-item-company-discription{
     width: 270px;
 }
+.list-item-company-discription:not(:last-child){
+    margin-right: 30px;
+}
 .list-item-company:not(:last-child){
     margin-right: 30px;
 }
@@ -412,7 +415,8 @@ display: block;
 }
 .button-filter{
     border-radius: 4px;
-    
+    padding: 6px 22px;
+
 font-family: var(--primery-font-fameli);
     font-style: normal;
     font-weight: 500;
